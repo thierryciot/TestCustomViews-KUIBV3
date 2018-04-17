@@ -1,0 +1,304 @@
+{
+    "authorization": {
+        "allowedRoles": []
+    },
+    "description": "This Module contains application level pages including the landing page and authentication page",
+    "moduleType": "system",
+    "name": "Application",
+    "order": 0,
+    "schemaVersion": "1.0",
+    "thumbnail": {
+        "background": "#b2b2b2",
+        "color": "#ffffff",
+        "icon": "fa-cubes"
+    },
+    "type": "module",
+    "uniqueID": "764f7340-821b-4b6a-91e1-4a49e12640a1",
+    "children": [
+        {
+            "authorization": {
+                "allowedRoles": []
+            },
+            "customSections": {
+                "bottom": "bottomSection.html",
+                "middle": "middleSection.html",
+                "top": "topSection.html"
+            },
+            "events": {
+                "hideEventHandler": "onHide",
+                "initEventHandler": "onInit",
+                "login": "onLogin",
+                "showEventHandler": "onShow"
+            },
+            "logo": "logo_default_login.png",
+            "name": "login",
+            "passwordLabel": "Password",
+            "readonly": false,
+            "schemaVersion": "1.0",
+            "title": "<Title>",
+            "type": "view",
+            "uniqueID": "1f34d36c-a190-45c8-bd81-ad5f3e0d76f3",
+            "usernameLabel": "Username",
+            "viewType": "login"
+        },
+        {
+            "authorization": {
+                "allowedRoles": []
+            },
+            "customSections": {
+                "bottom": "bottomSection.html",
+                "top": "topSection.html"
+            },
+            "events": {
+                "hideEventHandler": "onHide",
+                "initEventHandler": "onInit",
+                "showEventHandler": "onShow"
+            },
+            "name": "landing-page",
+            "readonly": false,
+            "schemaVersion": "1.0",
+            "type": "view",
+            "uniqueID": "f425f293-c8d4-4eb0-aba7-3ca364089cd5",
+            "viewType": "landing-page"
+        },
+        {
+            "authorization": {
+                "allowedRoles": []
+            },
+            "customSections": {
+                "bottom": "bottomSection.html",
+                "top": "topSection.html"
+            },
+            "events": {
+                "hideEventHandler": "onHide",
+                "initEventHandler": "onInit",
+                "showEventHandler": "onShow"
+            },
+            "extensionFolderName": "Application\\unauthorized-page",
+            "html": "<p><strong>We could not access the information you requested.</strong> <br> Use the navigation or go to the <a ui-sref=\"home\">Homepage</a>.</p>",
+            "name": "unauthorized-page",
+            "readonly": false,
+            "schemaVersion": "1.0",
+            "statusCode": false,
+            "title": "FORBIDDEN",
+            "type": "view",
+            "uniqueID": "272a4eaa-3454-4128-907a-6bd3bc54e824",
+            "viewType": "unauthorized-page"
+        },
+        {
+            "annotations": {
+                "dataSources": {
+                    "name": "dataSourceName"
+                }
+            },
+            "authorization": {
+                "allowedRoles": []
+            },
+            "children": [
+                {
+                    "annotations": {
+                        "id": "componentIdentifier"
+                    },
+                    "containerUid": "aeefe37d-81c1-48db-b201-231a1232ffff",
+                    "html": "<a href=\"/\" >\r\n    <img src=\"assets/images/logo_default.png\" class=\"inline img-responsive\" alt=\"logo\">\r\n</a>",
+                    "id": "customhtml0",
+                    "schemaVersion": "1.0",
+                    "type": "custom-html",
+                    "uniqueID": "3b3d2da6-e915-4972-a83d-95de30056c8a"
+                },
+                {
+                    "annotations": {
+                        "id": "componentIdentifier"
+                    },
+                    "containerUid": "e20844dd-96e0-449d-8ee4-8b1318ee9925",
+                    "events": {
+                        "onChange": "",
+                        "onSelect": ""
+                    },
+                    "id": "languagesDdl",
+                    "name": "",
+                    "schemaVersion": "1.0",
+                    "title": "",
+                    "type": "languages-drop-down",
+                    "uniqueID": "80bcea7f-bb6c-4e1d-854b-bd46f39b4ca7"
+                },
+                {
+                    "annotations": {
+                        "id": "componentIdentifier"
+                    },
+                    "containerUid": "ec3bd701-cd49-47cf-8334-357d322d8ab1",
+                    "id": "usernavigation0",
+                    "schemaVersion": "1.0",
+                    "type": "user-navigation",
+                    "uniqueID": "5db73898-7e27-4e97-822c-b4bce8512b6b"
+                },
+                {
+                    "containerUid": "aeefe37d-81c1-48db-b201-231a1232f67f",
+                    "id": "navigationpanelbar0",
+                    "schemaVersion": "1.0",
+                    "type": "navigation-panel-bar",
+                    "uniqueID": "0180a619-6bd1-4c41-acc3-45ae0635d039"
+                },
+                {
+                    "containerUid": "c3ab3207-f259-4eb7-995f-678d19906658",
+                    "id": "contentplaceholder0",
+                    "schemaVersion": "1.0",
+                    "type": "content-placeholder",
+                    "uniqueID": "fb80b972-34b3-40ca-b973-2783b6bacf70"
+                }
+            ],
+            "dataSources": [],
+            "events": {
+                "hideEventHandler": "onHide",
+                "initEventHandler": "onInit",
+                "showEventHandler": "onShow"
+            },
+            "extensionFolderName": "Application\\app-layout",
+            "hidden": false,
+            "name": "app-layout",
+            "readonly": false,
+            "rows": [
+                {
+                    "authorization": {
+                        "allowedRoles": []
+                    },
+                    "classList": "kb-header",
+                    "cols": [
+                        {
+                            "authorization": {
+                                "allowedRoles": []
+                            },
+                            "breakpoints": {
+                                "xs": 2
+                            },
+                            "classList": "kb-logo",
+                            "hidden": {
+                                "lg": false,
+                                "md": false,
+                                "sm": false,
+                                "xs": false
+                            },
+                            "rows": [],
+                            "schemaVersion": "1.0",
+                            "type": "col",
+                            "uniqueID": "aeefe37d-81c1-48db-b201-231a1232ffff"
+                        },
+                        {
+                            "authorization": {
+                                "allowedRoles": []
+                            },
+                            "breakpoints": {
+                                "xs": 7
+                            },
+                            "classList": "kb-col-placeholder",
+                            "hidden": {
+                                "lg": false,
+                                "md": false,
+                                "sm": false,
+                                "xs": false
+                            },
+                            "rows": [],
+                            "schemaVersion": "1.0",
+                            "type": "col",
+                            "uniqueID": "ce947c01-62bd-4b89-810e-084a6d1a0dc7"
+                        },
+                        {
+                            "authorization": {
+                                "allowedRoles": []
+                            },
+                            "breakpoints": {
+                                "xs": 2
+                            },
+                            "classList": "kb-languages",
+                            "hidden": {
+                                "lg": false,
+                                "md": false,
+                                "sm": false,
+                                "xs": false
+                            },
+                            "rows": [],
+                            "schemaVersion": "1.0",
+                            "type": "col",
+                            "uniqueID": "e20844dd-96e0-449d-8ee4-8b1318ee9925"
+                        },
+                        {
+                            "authorization": {
+                                "allowedRoles": []
+                            },
+                            "breakpoints": {
+                                "xs": 1
+                            },
+                            "classList": "kb-user-navigation-wrapper",
+                            "hidden": {
+                                "lg": false,
+                                "md": false,
+                                "sm": false,
+                                "xs": false
+                            },
+                            "rows": [],
+                            "schemaVersion": "1.0",
+                            "type": "col",
+                            "uniqueID": "ec3bd701-cd49-47cf-8334-357d322d8ab1"
+                        }
+                    ],
+                    "schemaVersion": "1.0",
+                    "type": "row",
+                    "uniqueID": "76a58461-247d-4dc4-a269-1754d93e0dbf"
+                },
+                {
+                    "authorization": {
+                        "allowedRoles": []
+                    },
+                    "classList": "kb-header-content-wrapper",
+                    "cols": [
+                        {
+                            "authorization": {
+                                "allowedRoles": []
+                            },
+                            "breakpoints": {
+                                "xs": 2
+                            },
+                            "classList": "kb-side-navigation kb-mobile-navigation",
+                            "hidden": {
+                                "lg": false,
+                                "md": false,
+                                "sm": false,
+                                "xs": false
+                            },
+                            "rows": [],
+                            "schemaVersion": "1.0",
+                            "type": "col",
+                            "uniqueID": "aeefe37d-81c1-48db-b201-231a1232f67f"
+                        },
+                        {
+                            "authorization": {
+                                "allowedRoles": []
+                            },
+                            "breakpoints": {
+                                "xs": 10
+                            },
+                            "classList": "kb-content k-content",
+                            "hidden": {
+                                "lg": false,
+                                "md": false,
+                                "sm": false,
+                                "xs": false
+                            },
+                            "rows": [],
+                            "schemaVersion": "1.0",
+                            "type": "col",
+                            "uniqueID": "c3ab3207-f259-4eb7-995f-678d19906658"
+                        }
+                    ],
+                    "schemaVersion": "1.0",
+                    "type": "row",
+                    "uniqueID": "76a58461-247d-4dc4-a269-2754d93e0dbf"
+                }
+            ],
+            "schemaVersion": "1.0",
+            "type": "view",
+            "uniqueID": "ec8f7b72-4a50-4cd5-ade7-8a2d48aba0eb",
+            "viewType": "app-layout"
+        }
+    ]
+}

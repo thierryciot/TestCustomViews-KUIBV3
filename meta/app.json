@@ -1,0 +1,17 @@
+{
+    "authorization": {
+        "roles": []
+    },
+    "children": [],
+    "defaultLangaugeCulture": "en-US",
+    "defaultLanguageLabel": "English",
+    "description": "",
+    "layout": {},
+    "logo": "logo_default.png",
+    "name": "TestCustomViews-KUIBV3",
+    "schemaVersion": "1.4.19",
+    "targetFramework": "Angular",
+    "theme": "metro",
+    "type": "app",
+    "uniqueID": "aac06fd3-2c22-4ba4-9a17-0aed81dbb19b"
+}

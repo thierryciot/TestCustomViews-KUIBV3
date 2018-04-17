@@ -1,0 +1,641 @@
+{
+    "authorization": {
+        "allowedRoles": []
+    },
+    "children": [
+        {
+            "annotations": {
+                "dataSources": {
+                    "name": "dataSourceName"
+                }
+            },
+            "authorization": {
+                "allowedRoles": []
+            },
+            "children": [
+                {
+                    "containerUid": "ac0f3d68-167d-4f83-bba9-e1d38c04258b",
+                    "greeting": "eh",
+                    "id": "customhelloworldcomp0",
+                    "schemaVersion": "1.0",
+                    "type": "custom-hello-world-comp",
+                    "uniqueID": "1a501c0d-57c5-4da5-8ef8-61efde8e95c7"
+                },
+                {
+                    "containerUid": "93cafb21-1b44-4a58-8bb0-ebd12c6f4437",
+                    "greeting": "Salutations",
+                    "id": "customhelloworldcomp1",
+                    "schemaVersion": "1.0",
+                    "type": "custom-hello-world-comp",
+                    "uniqueID": "0e899a39-c7e3-4cdf-87a1-3803b69ae5ec"
+                }
+            ],
+            "classList": "",
+            "customSections": {
+                "top": "topSection.html"
+            },
+            "dataSources": [],
+            "events": {
+                "hideEventHandler": "onHide",
+                "initEventHandler": "onInit",
+                "showEventHandler": "onShow"
+            },
+            "hidden": false,
+            "label": "HW1",
+            "name": "HW1",
+            "rows": [
+                {
+                    "authorization": {
+                        "allowedRoles": []
+                    },
+                    "classList": "",
+                    "cols": [
+                        {
+                            "authorization": {
+                                "allowedRoles": []
+                            },
+                            "breakpoints": {
+                                "sm": 6
+                            },
+                            "classList": "",
+                            "hidden": {
+                                "lg": false,
+                                "md": false,
+                                "sm": false,
+                                "xs": false
+                            },
+                            "rows": [],
+                            "schemaVersion": "1.0",
+                            "type": "col",
+                            "uniqueID": "ac0f3d68-167d-4f83-bba9-e1d38c04258b"
+                        },
+                        {
+                            "authorization": {
+                                "allowedRoles": []
+                            },
+                            "breakpoints": {
+                                "sm": 6
+                            },
+                            "classList": "",
+                            "hidden": {
+                                "lg": false,
+                                "md": false,
+                                "sm": false,
+                                "xs": false
+                            },
+                            "rows": [],
+                            "schemaVersion": "1.0",
+                            "type": "col",
+                            "uniqueID": "d2b9446a-3ed3-4da4-972f-82f707f602d0"
+                        }
+                    ],
+                    "schemaVersion": "1.0",
+                    "type": "row",
+                    "uniqueID": "1fdf27d3-a106-45bb-bf78-70b60a89aa66"
+                },
+                {
+                    "authorization": {
+                        "allowedRoles": []
+                    },
+                    "classList": "",
+                    "cols": [
+                        {
+                            "authorization": {
+                                "allowedRoles": []
+                            },
+                            "breakpoints": {
+                                "sm": 6
+                            },
+                            "classList": "",
+                            "hidden": {
+                                "lg": false,
+                                "md": false,
+                                "sm": false,
+                                "xs": false
+                            },
+                            "rows": [],
+                            "schemaVersion": "1.0",
+                            "type": "col",
+                            "uniqueID": "93cafb21-1b44-4a58-8bb0-ebd12c6f4437"
+                        }
+                    ],
+                    "schemaVersion": "1.0",
+                    "type": "row",
+                    "uniqueID": "627641d7-7d7e-4567-bd08-00b6ad152419"
+                }
+            ],
+            "schemaVersion": "1.0",
+            "type": "view",
+            "uniqueID": "caf3f58e-183b-4bea-b022-1175e09a6aad",
+            "viewType": "blank"
+        },
+        {
+            "annotations": {
+                "dataSources": {
+                    "name": "dataSourceName"
+                }
+            },
+            "authorization": {
+                "allowedRoles": []
+            },
+            "children": [
+                {
+                    "annotations": {
+                        "id": "componentIdentifier"
+                    },
+                    "containerUid": "1549cc2d-f748-47f9-aeac-e348c318904a",
+                    "html": "<div style=\"border: 1px solid black; padding: 1rem;\">\r\n    The combobox on the left shows the list of devices from REST service (By ID) and the custom component on the right shows \r\n    the selected fields in the model (for example current temperature and humidity)\r\n</div>",
+                    "id": "customhtml0",
+                    "schemaVersion": "1.0",
+                    "type": "custom-html",
+                    "uniqueID": "1ef6627f-2d94-4ad9-9431-e88c03eb3664"
+                },
+                {
+                    "annotationRefs": {
+                        "forAttribute": {
+                            "kind": "componentIdentifier"
+                        }
+                    },
+                    "annotations": {
+                        "id": "componentIdentifier"
+                    },
+                    "containerUid": "d2b784f6-c46e-4180-9bd3-dc5b649204a2",
+                    "forAttribute": "",
+                    "id": "label0",
+                    "schemaVersion": "1.0",
+                    "text": "Device ID",
+                    "type": "label",
+                    "uniqueID": "9db95abb-d15d-496e-ac54-23bf9bad03ce"
+                },
+                {
+                    "annotationRefs": {
+                        "cascadeFrom": {
+                            "kind": "componentIdentifier"
+                        },
+                        "dataSourceName": {
+                            "kind": "dataSourceName",
+                            "value": "cb4faea3-2c96-450d-bb75-b2e43bd54d3b.ViewDataSource1"
+                        }
+                    },
+                    "annotations": {
+                        "id": "componentIdentifier"
+                    },
+                    "containerUid": "30832ae3-c649-44ea-b380-4abc72871f26",
+                    "dataSourceName": "ViewDataSource1",
+                    "events": {
+                        "onChange": "",
+                        "onFilter": "",
+                        "onSelect": ""
+                    },
+                    "filter": "None",
+                    "id": "combobox0",
+                    "model": "ViewDataSource1Model",
+                    "name": "",
+                    "schemaVersion": "1.0",
+                    "textField": "id",
+                    "title": "",
+                    "type": "combo-box",
+                    "uniqueID": "c37329e4-b4d9-4501-b46d-f001d15da05a",
+                    "validation": {
+                        "required": false
+                    },
+                    "valueField": "id",
+                    "valuePrimitive": false
+                },
+                {
+                    "containerUid": "fe1c2dea-23da-4719-8419-35a257d15e77",
+                    "id": "customdevicemetricscomp0",
+                    "metric": "Current Temperature",
+                    "model": "ViewDataSource1Model.currentTemp",
+                    "schemaVersion": "1.0",
+                    "type": "custom-device-metrics-comp",
+                    "uniqueID": "e00365c8-a3a2-407d-88ee-2a8901bf0325"
+                },
+                {
+                    "annotations": {
+                        "id": "componentIdentifier"
+                    },
+                    "children": [],
+                    "containerUid": "74e7152c-7ed6-465a-bd7c-a307dd046e78",
+                    "expanded": false,
+                    "id": "expander0",
+                    "rows": [
+                        {
+                            "authorization": {
+                                "allowedRoles": []
+                            },
+                            "classList": "",
+                            "cols": [],
+                            "schemaVersion": "1.0",
+                            "type": "row",
+                            "uniqueID": "a0436542-bc83-417c-a0da-78bc1cc84260"
+                        }
+                    ],
+                    "schemaVersion": "1.0",
+                    "text": "Expander title",
+                    "type": "expander",
+                    "uniqueID": "e146bf41-d33c-4813-81c5-4aac615eceeb"
+                }
+            ],
+            "classList": "",
+            "customSections": {
+                "top": "topSection.html"
+            },
+            "dataSources": [
+                {
+                    "batch": true,
+                    "dataProviderName": "IoT",
+                    "dataSourceName": "Devices",
+                    "name": "ViewDataSource1",
+                    "pageSize": 40,
+                    "uniqueID": "cb4faea3-2c96-450d-bb75-b2e43bd54d3b"
+                }
+            ],
+            "events": {
+                "hideEventHandler": "onHide",
+                "initEventHandler": "onInit",
+                "showEventHandler": "onShow"
+            },
+            "hidden": false,
+            "label": "DropDown To Custom Component",
+            "name": "DropDownToCustomComp",
+            "rows": [
+                {
+                    "authorization": {
+                        "allowedRoles": []
+                    },
+                    "classList": "",
+                    "cols": [
+                        {
+                            "authorization": {
+                                "allowedRoles": []
+                            },
+                            "breakpoints": {
+                                "sm": 12
+                            },
+                            "classList": "",
+                            "hidden": {
+                                "lg": false,
+                                "md": false,
+                                "sm": false,
+                                "xs": false
+                            },
+                            "rows": [],
+                            "schemaVersion": "1.0",
+                            "type": "col",
+                            "uniqueID": "1549cc2d-f748-47f9-aeac-e348c318904a"
+                        }
+                    ],
+                    "schemaVersion": "1.0",
+                    "type": "row",
+                    "uniqueID": "7ed8ef33-88e7-4536-a3e9-76896cfe93fa"
+                },
+                {
+                    "authorization": {
+                        "allowedRoles": []
+                    },
+                    "classList": "myRow",
+                    "cols": [
+                        {
+                            "authorization": {
+                                "allowedRoles": []
+                            },
+                            "breakpoints": {
+                                "sm": 2
+                            },
+                            "classList": "",
+                            "hidden": {
+                                "lg": false,
+                                "md": false,
+                                "sm": false,
+                                "xs": false
+                            },
+                            "rows": [],
+                            "schemaVersion": "1.0",
+                            "type": "col",
+                            "uniqueID": "d2b784f6-c46e-4180-9bd3-dc5b649204a2"
+                        },
+                        {
+                            "authorization": {
+                                "allowedRoles": []
+                            },
+                            "breakpoints": {
+                                "sm": 4
+                            },
+                            "classList": "",
+                            "hidden": {
+                                "lg": false,
+                                "md": false,
+                                "sm": false,
+                                "xs": false
+                            },
+                            "rows": [],
+                            "schemaVersion": "1.0",
+                            "type": "col",
+                            "uniqueID": "30832ae3-c649-44ea-b380-4abc72871f26"
+                        },
+                        {
+                            "authorization": {
+                                "allowedRoles": []
+                            },
+                            "breakpoints": {
+                                "sm": 6
+                            },
+                            "classList": "",
+                            "hidden": {
+                                "lg": false,
+                                "md": false,
+                                "sm": false,
+                                "xs": false
+                            },
+                            "rows": [],
+                            "schemaVersion": "1.0",
+                            "type": "col",
+                            "uniqueID": "fe1c2dea-23da-4719-8419-35a257d15e77"
+                        },
+                        {
+                            "authorization": {
+                                "allowedRoles": []
+                            },
+                            "breakpoints": {
+                                "sm": 12
+                            },
+                            "classList": "",
+                            "hidden": {
+                                "lg": false,
+                                "md": false,
+                                "sm": false,
+                                "xs": false
+                            },
+                            "rows": [],
+                            "schemaVersion": "1.0",
+                            "type": "col",
+                            "uniqueID": "74e7152c-7ed6-465a-bd7c-a307dd046e78"
+                        }
+                    ],
+                    "schemaVersion": "1.0",
+                    "type": "row",
+                    "uniqueID": "16937d45-f09d-4fe0-851a-6e72a384608e"
+                }
+            ],
+            "schemaVersion": "1.0",
+            "type": "view",
+            "uniqueID": "477a85ae-830b-4efb-8ee6-0920864b31db",
+            "viewType": "blank"
+        },
+        {
+            "annotations": {
+                "dataSources": {
+                    "name": "dataSourceName"
+                }
+            },
+            "authorization": {
+                "allowedRoles": []
+            },
+            "children": [
+                {
+                    "annotationRefs": {
+                        "cascadeFrom": {
+                            "kind": "componentIdentifier"
+                        },
+                        "dataSourceName": {
+                            "kind": "dataSourceName",
+                            "value": "13c73932-2e20-4492-bfe2-7cb5dc116053.ViewDataSource1"
+                        }
+                    },
+                    "annotations": {
+                        "id": "componentIdentifier"
+                    },
+                    "containerUid": "25fad6ee-103f-459a-9bf3-7d97cfd4d175",
+                    "dataSourceName": "ViewDataSource1",
+                    "defaultItem": "",
+                    "events": {
+                        "onChange": "",
+                        "onSelect": ""
+                    },
+                    "id": "dropdownlist0",
+                    "model": "ViewDataSource1Model",
+                    "name": "",
+                    "schemaVersion": "1.0",
+                    "textField": "id",
+                    "title": "",
+                    "type": "drop-down-list",
+                    "uniqueID": "2ba597e7-a328-4ffe-acc6-a8ab4f353338",
+                    "validation": {
+                        "required": false
+                    },
+                    "valueField": "id",
+                    "valuePrimitive": false
+                },
+                {
+                    "containerUid": "dc0a9cf6-4cb9-4fd3-9f5c-54a0fc63d986",
+                    "dataSourceName": "",
+                    "id": "customdevicemultiplemetricscomp1",
+                    "metric": "All Metrics",
+                    "model": "ViewDataSource1Model",
+                    "schemaVersion": "1.0",
+                    "type": "custom-device-multiple-metrics-comp",
+                    "uniqueID": "1bcf540b-b2ae-4c41-b4cd-5f728f0c48e1",
+                    "valuePrimitive": false
+                }
+            ],
+            "classList": "",
+            "customSections": {
+                "top": "topSection.html"
+            },
+            "dataSources": [
+                {
+                    "batch": true,
+                    "dataProviderName": "IoT",
+                    "dataSourceName": "Devices",
+                    "name": "ViewDataSource1",
+                    "pageSize": 20,
+                    "uniqueID": "13c73932-2e20-4492-bfe2-7cb5dc116053"
+                }
+            ],
+            "events": {
+                "hideEventHandler": "onHide",
+                "initEventHandler": "onInit",
+                "showEventHandler": "onShow"
+            },
+            "hidden": false,
+            "label": "Dropdown to Multiple Metrics",
+            "name": "DropdownToMultipleMetrics",
+            "rows": [
+                {
+                    "authorization": {
+                        "allowedRoles": []
+                    },
+                    "classList": "",
+                    "cols": [
+                        {
+                            "authorization": {
+                                "allowedRoles": []
+                            },
+                            "breakpoints": {
+                                "sm": 6
+                            },
+                            "classList": "",
+                            "hidden": {
+                                "lg": false,
+                                "md": false,
+                                "sm": false,
+                                "xs": false
+                            },
+                            "rows": [],
+                            "schemaVersion": "1.0",
+                            "type": "col",
+                            "uniqueID": "25fad6ee-103f-459a-9bf3-7d97cfd4d175"
+                        },
+                        {
+                            "authorization": {
+                                "allowedRoles": []
+                            },
+                            "breakpoints": {
+                                "sm": 6
+                            },
+                            "classList": "",
+                            "hidden": {
+                                "lg": false,
+                                "md": false,
+                                "sm": false,
+                                "xs": false
+                            },
+                            "rows": [],
+                            "schemaVersion": "1.0",
+                            "type": "col",
+                            "uniqueID": "dc0a9cf6-4cb9-4fd3-9f5c-54a0fc63d986"
+                        },
+                        {
+                            "authorization": {
+                                "allowedRoles": []
+                            },
+                            "breakpoints": {
+                                "sm": 6
+                            },
+                            "classList": "",
+                            "hidden": {
+                                "lg": false,
+                                "md": false,
+                                "sm": false,
+                                "xs": false
+                            },
+                            "rows": [],
+                            "schemaVersion": "1.0",
+                            "type": "col",
+                            "uniqueID": "84b246bb-6080-42c1-9072-87ab20bbc35c"
+                        }
+                    ],
+                    "schemaVersion": "1.0",
+                    "type": "row",
+                    "uniqueID": "e679df75-b06f-4101-b16f-bf287a91d50f"
+                }
+            ],
+            "schemaVersion": "1.0",
+            "type": "view",
+            "uniqueID": "5f9cb9e2-1212-4817-9294-f5fc588417aa",
+            "viewType": "blank"
+        },
+        {
+            "annotations": {
+                "dataSources": {
+                    "name": "dataSourceName"
+                }
+            },
+            "authorization": {
+                "allowedRoles": []
+            },
+            "children": [
+                {
+                    "containerUid": "52ced4e2-928e-4bde-a49a-06a63df25e18",
+                    "greeting": "Salutations th",
+                    "id": "customhelloworldangcomp0",
+                    "schemaVersion": "1.0",
+                    "type": "custom-hello-world-ang-comp",
+                    "uniqueID": "831fc6f7-0142-4765-9d6e-6a7de913f67d"
+                }
+            ],
+            "classList": "",
+            "customSections": {
+                "top": "topSection.html"
+            },
+            "dataSources": [],
+            "events": {
+                "hideEventHandler": "onHide",
+                "initEventHandler": "onInit",
+                "showEventHandler": "onShow"
+            },
+            "hidden": false,
+            "label": "HWFromAngularComp",
+            "name": "HWFromAngularComp",
+            "rows": [
+                {
+                    "authorization": {
+                        "allowedRoles": []
+                    },
+                    "classList": "",
+                    "cols": [
+                        {
+                            "authorization": {
+                                "allowedRoles": []
+                            },
+                            "breakpoints": {
+                                "sm": 6
+                            },
+                            "classList": "",
+                            "hidden": {
+                                "lg": false,
+                                "md": false,
+                                "sm": false,
+                                "xs": false
+                            },
+                            "rows": [],
+                            "schemaVersion": "1.0",
+                            "type": "col",
+                            "uniqueID": "52ced4e2-928e-4bde-a49a-06a63df25e18"
+                        },
+                        {
+                            "authorization": {
+                                "allowedRoles": []
+                            },
+                            "breakpoints": {
+                                "sm": 6
+                            },
+                            "classList": "",
+                            "hidden": {
+                                "lg": false,
+                                "md": false,
+                                "sm": false,
+                                "xs": false
+                            },
+                            "rows": [],
+                            "schemaVersion": "1.0",
+                            "type": "col",
+                            "uniqueID": "127528a0-76ec-4070-9a2b-118f2bac4596"
+                        }
+                    ],
+                    "schemaVersion": "1.0",
+                    "type": "row",
+                    "uniqueID": "5baf1c0f-4b0f-42aa-8edd-a6e5378597f5"
+                }
+            ],
+            "schemaVersion": "1.0",
+            "type": "view",
+            "uniqueID": "a63287bf-2d3a-4caa-8c83-6d9b8befecd7",
+            "viewType": "blank"
+        }
+    ],
+    "description": "A module for testing custom components",
+    "label": "Custom Components",
+    "moduleType": "default",
+    "name": "CustomComponents",
+    "order": 2,
+    "schemaVersion": "1.0",
+    "thumbnail": {
+        "background": "#00a2e8",
+        "color": "#ffffff",
+        "icon": "fa-area-chart"
+    },
+    "type": "module",
+    "uniqueID": "bae1d897-56b7-43a8-813a-25f80c136843"
+}

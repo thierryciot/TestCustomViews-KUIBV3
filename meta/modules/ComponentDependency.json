@@ -1,0 +1,333 @@
+{
+    "authorization": {
+        "allowedRoles": []
+    },
+    "children": [
+        {
+            "annotations": {
+                "dataSources": {
+                    "name": "dataSourceName"
+                }
+            },
+            "authorization": {
+                "allowedRoles": []
+            },
+            "children": [
+                {
+                    "annotations": {
+                        "id": "componentIdentifier"
+                    },
+                    "containerUid": "4239a9b4-cf3e-4a0b-9525-cb536ae78b3e",
+                    "html": "<div style=\"border: 1px solid black; padding: 1rem;\">\r\nThe combobox on the left shows the list of devices from REST service (By ID) and the text field on the right shows \r\nthe selected field in the model (for example current temperature)\r\n</div>",
+                    "id": "customhtml0",
+                    "schemaVersion": "1.0",
+                    "type": "custom-html",
+                    "uniqueID": "9b7279a7-e9f2-4ff6-ae7e-3bf0054767a1"
+                },
+                {
+                    "annotationRefs": {
+                        "forAttribute": {
+                            "kind": "componentIdentifier",
+                            "value": "115913a0-ee4f-47bd-957d-c58fba0431b8.label0"
+                        }
+                    },
+                    "annotations": {
+                        "id": "componentIdentifier"
+                    },
+                    "containerUid": "68ac37f0-51df-4e3a-99d9-76b93dfd80b1",
+                    "forAttribute": "combobox0",
+                    "id": "label0",
+                    "schemaVersion": "1.0",
+                    "text": "Device Id",
+                    "type": "label",
+                    "uniqueID": "e9c4ec7a-97f6-4ae5-a3fd-d441f93ffada"
+                },
+                {
+                    "annotationRefs": {
+                        "cascadeFrom": {
+                            "kind": "componentIdentifier"
+                        },
+                        "dataSourceName": {
+                            "kind": "dataSourceName",
+                            "value": "c426d985-c5f3-4cad-9c97-d04a89b6651b.ViewDataSource1"
+                        }
+                    },
+                    "annotations": {
+                        "id": "componentIdentifier"
+                    },
+                    "containerUid": "906a2d85-7e77-4819-a117-42465c3221b2",
+                    "dataSourceName": "ViewDataSource1",
+                    "events": {
+                        "onChange": "",
+                        "onFilter": "",
+                        "onSelect": ""
+                    },
+                    "filter": "None",
+                    "id": "combobox0",
+                    "model": "ViewDataSource1Model",
+                    "name": "",
+                    "schemaVersion": "1.0",
+                    "textField": "id",
+                    "title": "Device Id",
+                    "type": "combo-box",
+                    "uniqueID": "115913a0-ee4f-47bd-957d-c58fba0431b8",
+                    "validation": {
+                        "required": false
+                    },
+                    "valueField": "id",
+                    "valuePrimitive": false
+                },
+                {
+                    "annotationRefs": {
+                        "forAttribute": {
+                            "kind": "componentIdentifier",
+                            "value": "eba8070d-5ca0-47b0-92cc-b5c0de1bdd9c.label1"
+                        }
+                    },
+                    "annotations": {
+                        "id": "componentIdentifier"
+                    },
+                    "containerUid": "27560065-ad20-4e01-8eff-c9621ae3951d",
+                    "forAttribute": "textbox0",
+                    "id": "label1",
+                    "schemaVersion": "1.0",
+                    "text": "Current Temperature",
+                    "type": "label",
+                    "uniqueID": "062f57e6-d8d3-4d43-a6a0-4d69086561a5"
+                },
+                {
+                    "annotations": {
+                        "id": "componentIdentifier"
+                    },
+                    "containerUid": "ef2ef917-8a1c-47a9-9168-53f76a2b64de",
+                    "debounce": 0,
+                    "defaultValue": "",
+                    "events": {
+                        "onChange": ""
+                    },
+                    "id": "textbox0",
+                    "model": "ViewDataSource1Model.currentTemp",
+                    "name": "",
+                    "placeholder": "",
+                    "schemaVersion": "1.0",
+                    "title": "",
+                    "type": "text-box",
+                    "uniqueID": "eba8070d-5ca0-47b0-92cc-b5c0de1bdd9c",
+                    "validation": {
+                        "required": false
+                    }
+                }
+            ],
+            "classList": "",
+            "customSections": {
+                "top": "topSection.html"
+            },
+            "dataSources": [
+                {
+                    "batch": true,
+                    "dataProviderName": "IoT",
+                    "dataSourceName": "Devices",
+                    "name": "ViewDataSource1",
+                    "pageSize": 50,
+                    "uniqueID": "c426d985-c5f3-4cad-9c97-d04a89b6651b"
+                }
+            ],
+            "events": {
+                "hideEventHandler": "onHide",
+                "initEventHandler": "onInit",
+                "showEventHandler": "onShow"
+            },
+            "hidden": false,
+            "label": "DropDownToTextField",
+            "name": "DropDownToTextField",
+            "rows": [
+                {
+                    "authorization": {
+                        "allowedRoles": []
+                    },
+                    "classList": "",
+                    "cols": [
+                        {
+                            "authorization": {
+                                "allowedRoles": []
+                            },
+                            "breakpoints": {
+                                "lg": 12,
+                                "md": 12,
+                                "sm": 12,
+                                "xs": 12
+                            },
+                            "classList": "",
+                            "hidden": {
+                                "lg": false,
+                                "md": false,
+                                "sm": false,
+                                "xs": false
+                            },
+                            "rows": [],
+                            "schemaVersion": "1.0",
+                            "type": "col",
+                            "uniqueID": "4239a9b4-cf3e-4a0b-9525-cb536ae78b3e"
+                        }
+                    ],
+                    "schemaVersion": "1.0",
+                    "type": "row",
+                    "uniqueID": "b5847655-8a5e-4fc1-af8d-db8f5ec0a703"
+                },
+                {
+                    "authorization": {
+                        "allowedRoles": []
+                    },
+                    "classList": "myRows",
+                    "cols": [
+                        {
+                            "authorization": {
+                                "allowedRoles": []
+                            },
+                            "breakpoints": {
+                                "sm": 2
+                            },
+                            "classList": "myLabels",
+                            "hidden": {
+                                "lg": false,
+                                "md": false,
+                                "sm": false,
+                                "xs": false
+                            },
+                            "rows": [],
+                            "schemaVersion": "1.0",
+                            "type": "col",
+                            "uniqueID": "68ac37f0-51df-4e3a-99d9-76b93dfd80b1"
+                        },
+                        {
+                            "authorization": {
+                                "allowedRoles": []
+                            },
+                            "breakpoints": {
+                                "sm": 4
+                            },
+                            "classList": "",
+                            "hidden": {
+                                "lg": false,
+                                "md": false,
+                                "sm": false,
+                                "xs": false
+                            },
+                            "rows": [],
+                            "schemaVersion": "1.0",
+                            "type": "col",
+                            "uniqueID": "906a2d85-7e77-4819-a117-42465c3221b2"
+                        },
+                        {
+                            "authorization": {
+                                "allowedRoles": []
+                            },
+                            "breakpoints": {
+                                "sm": 2
+                            },
+                            "classList": "myLabels",
+                            "hidden": {
+                                "lg": false,
+                                "md": false,
+                                "sm": false,
+                                "xs": false
+                            },
+                            "rows": [],
+                            "schemaVersion": "1.0",
+                            "type": "col",
+                            "uniqueID": "27560065-ad20-4e01-8eff-c9621ae3951d"
+                        },
+                        {
+                            "authorization": {
+                                "allowedRoles": []
+                            },
+                            "breakpoints": {
+                                "sm": 4
+                            },
+                            "classList": "",
+                            "hidden": {
+                                "lg": false,
+                                "md": false,
+                                "sm": false,
+                                "xs": false
+                            },
+                            "rows": [],
+                            "schemaVersion": "1.0",
+                            "type": "col",
+                            "uniqueID": "ef2ef917-8a1c-47a9-9168-53f76a2b64de"
+                        }
+                    ],
+                    "schemaVersion": "1.0",
+                    "type": "row",
+                    "uniqueID": "09510ea1-f176-4b8f-a880-21b14591a7e2"
+                },
+                {
+                    "authorization": {
+                        "allowedRoles": []
+                    },
+                    "classList": "",
+                    "cols": [
+                        {
+                            "authorization": {
+                                "allowedRoles": []
+                            },
+                            "breakpoints": {
+                                "sm": 6
+                            },
+                            "classList": "",
+                            "hidden": {
+                                "lg": false,
+                                "md": false,
+                                "sm": false,
+                                "xs": false
+                            },
+                            "rows": [],
+                            "schemaVersion": "1.0",
+                            "type": "col",
+                            "uniqueID": "2a723a8f-64fe-48c2-b223-7a9f84135c7b"
+                        },
+                        {
+                            "authorization": {
+                                "allowedRoles": []
+                            },
+                            "breakpoints": {
+                                "sm": 6
+                            },
+                            "classList": "",
+                            "hidden": {
+                                "lg": false,
+                                "md": false,
+                                "sm": false,
+                                "xs": false
+                            },
+                            "rows": [],
+                            "schemaVersion": "1.0",
+                            "type": "col",
+                            "uniqueID": "fb0ab17f-e01b-4815-9cd3-c6c36395e52e"
+                        }
+                    ],
+                    "schemaVersion": "1.0",
+                    "type": "row",
+                    "uniqueID": "d3efce35-70eb-445d-b095-d216afa4815d"
+                }
+            ],
+            "schemaVersion": "1.0",
+            "type": "view",
+            "uniqueID": "f6125ac7-1380-4863-abc3-cc7ae064b7bc",
+            "viewType": "blank"
+        }
+    ],
+    "description": "Showing how a component can render data from selected item.",
+    "label": "Component Dependency",
+    "moduleType": "default",
+    "name": "ComponentDependency",
+    "order": 4,
+    "schemaVersion": "1.0",
+    "thumbnail": {
+        "background": "#00a2e8",
+        "color": "#ffffff",
+        "icon": "fa-area-chart"
+    },
+    "type": "module",
+    "uniqueID": "60020779-ed9a-4a50-a76d-4b1727e31564"
+}

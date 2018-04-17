@@ -1,0 +1,420 @@
+{
+    "authorization": {
+        "allowedRoles": []
+    },
+    "description": "USe Kendo grid view to see content of the REST service",
+    "label": "Grid View from Test REST",
+    "moduleType": "default",
+    "name": "RestWithGrid",
+    "order": 3,
+    "schemaVersion": "1.0",
+    "thumbnail": {
+        "background": "#00a2e8",
+        "color": "#ffffff",
+        "icon": "fa-area-chart"
+    },
+    "type": "module",
+    "uniqueID": "62c7b2f7-e44b-497a-b143-1adcc0ec8ccd",
+    "children": [
+        {
+            "altRowTemplateFunction": "",
+            "altRowTemplateId": "",
+            "authorization": {
+                "allowedRoles": []
+            },
+            "classList": "",
+            "columns": [
+                {
+                    "componentOptions": {
+                        "annotations": {
+                            "id": "componentIdentifier"
+                        },
+                        "downArrowText": "",
+                        "events": {
+                            "onChange": ""
+                        },
+                        "format": "",
+                        "id": "ctl0",
+                        "model": "",
+                        "name": "id",
+                        "placeholder": "",
+                        "schemaVersion": "1.0",
+                        "spinners": false,
+                        "step": 1,
+                        "title": "id",
+                        "type": "numeric-text-box",
+                        "uniqueID": "3992e7a8-996b-40a1-984c-180047f40661",
+                        "upArrowText": "",
+                        "validation": {
+                            "required": false
+                        }
+                    },
+                    "editable": true,
+                    "encoded": true,
+                    "field": "id",
+                    "filterable": true,
+                    "format": "",
+                    "sortable": true,
+                    "title": "id"
+                },
+                {
+                    "componentOptions": {
+                        "annotations": {
+                            "id": "componentIdentifier"
+                        },
+                        "debounce": 0,
+                        "defaultValue": "",
+                        "events": {
+                            "onChange": ""
+                        },
+                        "format": "",
+                        "id": "ctl1",
+                        "model": "",
+                        "name": "name",
+                        "placeholder": "",
+                        "schemaVersion": "1.0",
+                        "title": "name",
+                        "type": "text-box",
+                        "uniqueID": "af7845d2-25bc-4ec8-84a8-f6252ecdfb08",
+                        "validation": {
+                            "required": false
+                        }
+                    },
+                    "editable": true,
+                    "encoded": true,
+                    "field": "name",
+                    "filterable": true,
+                    "format": "",
+                    "sortable": true,
+                    "title": "name"
+                }
+            ],
+            "customSections": {
+                "bottom": "bottomSection.html",
+                "middle": "middleSection.html",
+                "top": "topSection.html"
+            },
+            "dataProvider": "IoT",
+            "dataSource": "Buildings",
+            "editOptions": {
+                "allowDelete": true,
+                "allowEdit": true,
+                "allowInsert": true,
+                "batch": true,
+                "rowButtonIcons": {
+                    "destroy": "k-icon k-i-close",
+                    "edit": "k-icon k-i-edit"
+                },
+                "rowButtonLabels": {
+                    "canceledit": "Cancel",
+                    "destroy": "Delete",
+                    "edit": "Edit",
+                    "update": "Update"
+                },
+                "toolbarButtonIcons": {
+                    "cancel": "k-icon k-i-cancel",
+                    "create": "k-icon k-i-add",
+                    "save": "k-icon k-i-checkmark"
+                },
+                "toolbarButtonLabels": {
+                    "cancel": "Cancel changes",
+                    "create": "New",
+                    "save": "Save changes"
+                }
+            },
+            "editable": "Incell",
+            "events": {
+                "hideEventHandler": "onHide",
+                "initEventHandler": "onInit",
+                "onRowCreate": "",
+                "onRowDelete": "",
+                "onRowSelect": "onRowSelect",
+                "onRowUpdate": "",
+                "showEventHandler": "onShow"
+            },
+            "filterable": false,
+            "groupable": false,
+            "hidden": false,
+            "label": "Buildings",
+            "name": "Buildings",
+            "pageSize": 20,
+            "reorderable": false,
+            "resizable": false,
+            "rowTemplateFunction": "",
+            "rowTemplateId": "",
+            "schemaVersion": "1.0",
+            "sortable": false,
+            "title": "Buildings",
+            "type": "view",
+            "uniqueID": "0c89c0ca-1c27-4e1e-aced-70fefc480cc3",
+            "viewType": "data-grid"
+        },
+        {
+            "altRowTemplateFunction": "",
+            "altRowTemplateId": "",
+            "authorization": {
+                "allowedRoles": []
+            },
+            "classList": "",
+            "columns": [
+                {
+                    "componentOptions": {
+                        "annotations": {
+                            "id": "componentIdentifier"
+                        },
+                        "downArrowText": "",
+                        "events": {
+                            "onChange": ""
+                        },
+                        "format": "",
+                        "id": "ctl2",
+                        "model": "",
+                        "name": "id",
+                        "placeholder": "",
+                        "schemaVersion": "1.0",
+                        "spinners": false,
+                        "step": 1,
+                        "title": "id",
+                        "type": "numeric-text-box",
+                        "uniqueID": "19e2f330-7cdf-41d7-b669-0568878a8a57",
+                        "upArrowText": "",
+                        "validation": {
+                            "required": false
+                        }
+                    },
+                    "editable": true,
+                    "encoded": true,
+                    "field": "id",
+                    "filterable": true,
+                    "format": "",
+                    "sortable": true,
+                    "title": "id"
+                },
+                {
+                    "componentOptions": {
+                        "annotations": {
+                            "id": "componentIdentifier"
+                        },
+                        "downArrowText": "",
+                        "events": {
+                            "onChange": ""
+                        },
+                        "format": "",
+                        "id": "ctl3",
+                        "model": "",
+                        "name": "currentTemp",
+                        "placeholder": "",
+                        "schemaVersion": "1.0",
+                        "spinners": false,
+                        "step": 1,
+                        "title": "currentTemp",
+                        "type": "numeric-text-box",
+                        "uniqueID": "c7654e2f-f76f-42e7-8cf3-0aa29115b6ec",
+                        "upArrowText": "",
+                        "validation": {
+                            "required": false
+                        }
+                    },
+                    "editable": true,
+                    "encoded": true,
+                    "field": "currentTemp",
+                    "filterable": true,
+                    "format": "",
+                    "sortable": true,
+                    "title": "currentTemp"
+                },
+                {
+                    "componentOptions": {
+                        "annotations": {
+                            "id": "componentIdentifier"
+                        },
+                        "downArrowText": "",
+                        "events": {
+                            "onChange": ""
+                        },
+                        "format": "",
+                        "id": "ctl4",
+                        "model": "",
+                        "name": "setTemp",
+                        "placeholder": "",
+                        "schemaVersion": "1.0",
+                        "spinners": false,
+                        "step": 1,
+                        "title": "Set Temperature",
+                        "type": "numeric-text-box",
+                        "uniqueID": "ef742ffe-ef9e-40a2-a156-7484661af375",
+                        "upArrowText": "",
+                        "validation": {
+                            "required": false
+                        }
+                    },
+                    "editable": true,
+                    "encoded": true,
+                    "field": "setTemp",
+                    "filterable": true,
+                    "format": "",
+                    "sortable": true,
+                    "title": "Set Temperature"
+                },
+                {
+                    "componentOptions": {
+                        "annotations": {
+                            "id": "componentIdentifier"
+                        },
+                        "downArrowText": "",
+                        "events": {
+                            "onChange": ""
+                        },
+                        "format": "",
+                        "id": "ctl5",
+                        "model": "",
+                        "name": "hum",
+                        "placeholder": "",
+                        "schemaVersion": "1.0",
+                        "spinners": false,
+                        "step": 1,
+                        "title": "Humidity",
+                        "type": "numeric-text-box",
+                        "uniqueID": "c4d36a14-def3-4fa1-a986-38e44b23c8da",
+                        "upArrowText": "",
+                        "validation": {
+                            "required": false
+                        }
+                    },
+                    "editable": true,
+                    "encoded": true,
+                    "field": "hum",
+                    "filterable": true,
+                    "format": "",
+                    "sortable": true,
+                    "title": "Humidity"
+                },
+                {
+                    "componentOptions": {
+                        "annotations": {
+                            "id": "componentIdentifier"
+                        },
+                        "downArrowText": "",
+                        "events": {
+                            "onChange": ""
+                        },
+                        "format": "",
+                        "id": "ctl6",
+                        "model": "",
+                        "name": "co2",
+                        "placeholder": "",
+                        "schemaVersion": "1.0",
+                        "spinners": false,
+                        "step": 1,
+                        "title": "CO2 Level",
+                        "type": "numeric-text-box",
+                        "uniqueID": "454be68e-70ea-4103-a5fb-e23ef4793ee4",
+                        "upArrowText": "",
+                        "validation": {
+                            "required": false
+                        }
+                    },
+                    "editable": true,
+                    "encoded": true,
+                    "field": "co2",
+                    "filterable": true,
+                    "format": "",
+                    "sortable": true,
+                    "title": "CO2 Level"
+                },
+                {
+                    "componentOptions": {
+                        "annotations": {
+                            "id": "componentIdentifier"
+                        },
+                        "downArrowText": "",
+                        "events": {
+                            "onChange": ""
+                        },
+                        "format": "",
+                        "id": "ctl7",
+                        "model": "",
+                        "name": "voc",
+                        "placeholder": "",
+                        "schemaVersion": "1.0",
+                        "spinners": false,
+                        "step": 1,
+                        "title": "VOC",
+                        "type": "numeric-text-box",
+                        "uniqueID": "a46cd836-6b2d-495c-b966-80f9ae69949c",
+                        "upArrowText": "",
+                        "validation": {
+                            "required": false
+                        }
+                    },
+                    "editable": true,
+                    "encoded": true,
+                    "field": "voc",
+                    "filterable": true,
+                    "format": "",
+                    "sortable": true,
+                    "title": "VOC"
+                }
+            ],
+            "customSections": {
+                "bottom": "bottomSection.html",
+                "middle": "middleSection.html",
+                "top": "topSection.html"
+            },
+            "dataProvider": "IoT",
+            "dataSource": "Devices",
+            "editOptions": {
+                "allowDelete": true,
+                "allowEdit": true,
+                "allowInsert": true,
+                "batch": true,
+                "rowButtonIcons": {
+                    "destroy": "k-icon k-i-close",
+                    "edit": "k-icon k-i-edit"
+                },
+                "rowButtonLabels": {
+                    "canceledit": "Cancel",
+                    "destroy": "Delete",
+                    "edit": "Edit",
+                    "update": "Update"
+                },
+                "toolbarButtonIcons": {
+                    "cancel": "k-icon k-i-cancel",
+                    "create": "k-icon k-i-add",
+                    "save": "k-icon k-i-checkmark"
+                },
+                "toolbarButtonLabels": {
+                    "cancel": "Cancel changes",
+                    "create": "New",
+                    "save": "Save changes"
+                }
+            },
+            "editable": "Popup",
+            "events": {
+                "hideEventHandler": "onHide",
+                "initEventHandler": "onInit",
+                "onRowCreate": "",
+                "onRowDelete": "",
+                "onRowSelect": "onRowSelect",
+                "onRowUpdate": "",
+                "showEventHandler": "onShow"
+            },
+            "filterable": false,
+            "groupable": false,
+            "hidden": false,
+            "label": "Devices",
+            "name": "Devices",
+            "pageSize": 20,
+            "reorderable": false,
+            "resizable": false,
+            "rowTemplateFunction": "",
+            "rowTemplateId": "",
+            "schemaVersion": "1.0",
+            "sortable": false,
+            "title": "Devices",
+            "type": "view",
+            "uniqueID": "5caaf017-e696-49f7-b6c1-bc885871fdfd",
+            "viewType": "data-grid"
+        }
+    ]
+}
