@@ -1,0 +1,54 @@
+<!--
+Auto-generated
+Do not edit!!!
+-->
+<div class="data-grid">
+    <div class="row">
+        <kb-top-section></kb-top-section>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h2 [innerHTML]="$config.title"></h2>
+        </div>
+    </div>
+    <div class="row">
+        <kb-middle-section></kb-middle-section>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <kb-grid #grid [config]="$config.grid" [dataService]="$dataServices['Buildings']" [state]="$dataServicesState['Buildings']" [view]="$dataServicesResult['Buildings']">
+                <kendo-grid [pageable]="grid.config.pageable" [sortable]="grid.config.sortable" [filterable]="grid.config.filterable" [groupable]="grid.config.groupable" [data]="grid.view | async" [pageSize]="grid.state.take" [skip]="grid.state.skip" [sort]="grid.state.sort"
+                    [filter]="grid.state.filter" [group]="grid.state.group" (dataStateChange)="grid.dataStateChange($event)" (cellClick)="grid.cellClickHandler($event)" (cellClose)="grid.cellCloseHandler($event)" (cancel)="grid.cancelHandler($event)" (save)="grid.saveHandler($event)"
+                    (remove)="grid.removeHandler($event)" (add)="grid.addHandler($event)" kendoGridSelectBy [selectedKeys]="grid.selectedKeys" [selectable]="{ mode: 'single' }" (selectionChange)="grid.selectionChange($event)" [resizable]="grid.config.resizable"
+                    [reorderable]="grid.config.reorderable">
+                    <ng-template kendoGridToolbarTemplate>
+                        <button kendoGridAddCommand><span class="k-icon k-i-add"></span>New</button>
+                        <button class="k-button" (click)="grid.saveChanges()"><span class="k-icon k-i-checkmark"></span>Save changes</button>
+                        <button class="k-button" (click)="grid.cancelChanges()"><span class="k-icon k-i-cancel"></span>Cancel changes</button>
+                    </ng-template>
+                    <kendo-grid-column [field]="'id'" [filterable]="true" [sortable]="true" [title]="'id'">
+                        <ng-template kendoGridEditTemplate let-dataItem="dataItem">
+                            <kb-numeric-text-box [config]="$config.components.ctl0" [id]="'ctl0'" [(model)]="grid.editDataModel.id" [formGroup]="grid.formGroup">
+                            </kb-numeric-text-box>
+                        </ng-template>
+                    </kendo-grid-column>
+                    <kendo-grid-column [field]="'name'" [filterable]="true" [sortable]="true" [title]="'name'">
+                        <ng-template kendoGridEditTemplate let-dataItem="dataItem">
+                            <kb-text-box [config]="$config.components.ctl1" [id]="'ctl1'" [(model)]="grid.editDataModel.name" [formGroup]="grid.formGroup">
+                            </kb-text-box>
+                        </ng-template>
+                    </kendo-grid-column>
+                    <kendo-grid-command-column [width]="grid.config.commandColumnWidth">
+                        <ng-template kendoGridCellTemplate>
+                            <button kendoGridSaveCommand><span class="k-icon k-i-checkmark"></span>Update</button>
+                            <button kendoGridCancelCommand><span class="k-icon k-i-cancel"></span>Cancel</button>
+                            <button kendoGridRemoveCommand><span class="k-icon k-i-close"></span>Delete</button>
+                        </ng-template>
+                    </kendo-grid-command-column>
+                    </kendo-grid>
+            </kb-grid>
+        </div>
+        <div class="row">
+            <kb-bottom-section></kb-bottom-section>
+        </div>
+    </div>

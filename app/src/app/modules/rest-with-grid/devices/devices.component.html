@@ -1,0 +1,120 @@
+<!--
+Auto-generated
+Do not edit!!!
+-->
+<div class="data-grid">
+    <div class="row">
+        <kb-top-section></kb-top-section>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h2 [innerHTML]="$config.title"></h2>
+        </div>
+    </div>
+    <div class="row">
+        <kb-middle-section></kb-middle-section>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <kb-grid #grid [config]="$config.grid" [dataService]="$dataServices['Devices']" [state]="$dataServicesState['Devices']" [view]="$dataServicesResult['Devices']">
+                <kendo-grid [pageable]="grid.config.pageable" [sortable]="grid.config.sortable" [filterable]="grid.config.filterable" [groupable]="grid.config.groupable" [data]="grid.view | async" [pageSize]="grid.state.take" [skip]="grid.state.skip" [sort]="grid.state.sort"
+                    [filter]="grid.state.filter" [group]="grid.state.group" (dataStateChange)="grid.dataStateChange($event)" (edit)="grid.editHandler($event)" (cancel)="grid.cancelHandler($event)" (save)="grid.saveHandler($event)" (remove)="grid.removeHandler($event)"
+                    (add)="grid.addHandler($event)" kendoGridSelectBy [selectedKeys]="grid.selectedKeys" [selectable]="{ mode: 'single' }" (selectionChange)="grid.selectionChange($event)" [resizable]="grid.config.resizable" [reorderable]="grid.config.reorderable">
+                    <ng-template kendoGridToolbarTemplate>
+                        <button kendoGridAddCommand><span class="k-icon k-i-add"></span>New</button>
+                    </ng-template>
+                    <kendo-grid-column [field]="'id'" [filterable]="true" [sortable]="true" [title]="'id'">
+                    </kendo-grid-column>
+                    <kendo-grid-column [field]="'currentTemp'" [filterable]="true" [sortable]="true" [title]="'currentTemp'">
+                    </kendo-grid-column>
+                    <kendo-grid-column [field]="'setTemp'" [filterable]="true" [sortable]="true" [title]="'Set Temperature'">
+                    </kendo-grid-column>
+                    <kendo-grid-column [field]="'hum'" [filterable]="true" [sortable]="true" [title]="'Humidity'">
+                    </kendo-grid-column>
+                    <kendo-grid-column [field]="'co2'" [filterable]="true" [sortable]="true" [title]="'CO2 Level'">
+                    </kendo-grid-column>
+                    <kendo-grid-column [field]="'voc'" [filterable]="true" [sortable]="true" [title]="'VOC'">
+                    </kendo-grid-column>
+                    <kendo-grid-command-column [width]="grid.config.commandColumnWidth">
+                        <ng-template kendoGridCellTemplate>
+                            <button kendoGridEditCommand><span class="k-icon k-i-edit"></span>Edit</button>
+                            <button kendoGridRemoveCommand><span class="k-icon k-i-close"></span>Delete</button>
+                        </ng-template>
+                    </kendo-grid-command-column>
+                    </kendo-grid>
+                    <kendo-dialog *ngIf="grid.popupActive" (close)="grid.closeEditor()">
+                        <kendo-dialog-titlebar>
+                            {{ grid.isNew ? 'Add new' : 'Edit' }}
+                        </kendo-dialog-titlebar>
+                        <kb-data-form [model]="grid.editDataModel" [formGroup]="grid.formGroup">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <label for="ctl2">id</label>
+                                </div>
+                                <div class="col-md-7">
+                                    <kb-numeric-text-box [config]="$config.components.ctl2" [id]="'ctl2'" [(model)]="grid.editDataModel.id" [formGroup]="grid.formGroup">
+                                    </kb-numeric-text-box>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <label for="ctl3">currentTemp</label>
+                                </div>
+                                <div class="col-md-7">
+                                    <kb-numeric-text-box [config]="$config.components.ctl3" [id]="'ctl3'" [(model)]="grid.editDataModel.currentTemp" [formGroup]="grid.formGroup">
+                                    </kb-numeric-text-box>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <label for="ctl4">Set Temperature</label>
+                                </div>
+                                <div class="col-md-7">
+                                    <kb-numeric-text-box [config]="$config.components.ctl4" [id]="'ctl4'" [(model)]="grid.editDataModel.setTemp" [formGroup]="grid.formGroup">
+                                    </kb-numeric-text-box>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <label for="ctl5">Humidity</label>
+                                </div>
+                                <div class="col-md-7">
+                                    <kb-numeric-text-box [config]="$config.components.ctl5" [id]="'ctl5'" [(model)]="grid.editDataModel.hum" [formGroup]="grid.formGroup">
+                                    </kb-numeric-text-box>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <label for="ctl6">CO2 Level</label>
+                                </div>
+                                <div class="col-md-7">
+                                    <kb-numeric-text-box [config]="$config.components.ctl6" [id]="'ctl6'" [(model)]="grid.editDataModel.co2" [formGroup]="grid.formGroup">
+                                    </kb-numeric-text-box>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <label for="ctl7">VOC</label>
+                                </div>
+                                <div class="col-md-7">
+                                    <kb-numeric-text-box [config]="$config.components.ctl7" [id]="'ctl7'" [(model)]="grid.editDataModel.voc" [formGroup]="grid.formGroup">
+                                    </kb-numeric-text-box>
+                                </div>
+                            </div>
+                        </kb-data-form>
+                        <kendo-dialog-actions>
+                            <button class="k-button" (click)="grid.cancelHandler($event)">
+            <span class="k-icon k-i-cancel"></span>Cancel
+        </button>
+                            <button class="k-button k-primary" [disabled]="!grid.formGroup.valid" (click)="grid.saveHandler($event)">
+            <span class="k-icon k-i-checkmark"></span>Update
+        </button>
+                        </kendo-dialog-actions>
+                    </kendo-dialog>
+
+            </kb-grid>
+        </div>
+        <div class="row">
+            <kb-bottom-section></kb-bottom-section>
+        </div>
+    </div>

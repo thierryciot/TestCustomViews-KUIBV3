@@ -1,0 +1,44 @@
+<!--
+Auto-generated
+Do not edit!!!
+-->
+
+<div class="row ">
+
+    <div class="col-sm-6">
+        <span><kb-drop-down-list
+    [id]="'dropdownlist0'"
+    [config]="$config.components.dropdownlist0"
+    
+    [data]="$dataServicesData['ViewDataSource1'] | async"
+    
+    [(model)]="$dataModels.ViewDataSource1Model"
+
+    
+    (modelChange)="($event)"
+    
+    
+    (selectionChange)="($event)"
+    
+    >
+</kb-drop-down-list>
+</span>
+    </div>
+
+    <div class="col-sm-6">
+        <span><div>
+    {{$config.components.customdevicemultiplemetricscomp1.metric}}:
+    <ul style="padding-left: 1.5rem;">
+        
+       <li>Current Temperature: {{$dataModels.ViewDataSource1Model.currentTemp}}</li>
+       <li>Set Temperature: {{$dataModels.ViewDataSource1Model.setTemp}}</li>
+       <li>Humidity: {{$dataModels.ViewDataSource1Model.hum}}</li>
+       <li>CO2: {{$dataModels.ViewDataSource1Model.co2}}</li>
+       <li>VOC: {{$dataModels.ViewDataSource1Model.voc}}</li>
+    </ul>
+</div></span>
+    </div>
+
+    <div class="col-sm-6">
+    </div>
+</div>

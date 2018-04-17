@@ -1,0 +1,79 @@
+<!--
+Auto-generated
+Do not edit!!!
+-->
+
+<div class="row ">
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+        <span><kb-custom-html [id]="'customhtml0'">
+<div style="border: 1px solid black; padding: 1rem;">
+The combobox on the left shows the list of devices from REST service (By ID) and the text field on the right shows 
+the selected field in the model (for example current temperature)
+</div>
+</kb-custom-html></span>
+    </div>
+</div>
+<div class="row myRows">
+
+    <div class="col-sm-2 myLabels">
+        <span><kb-label
+    [config]="$config.components.label0"
+    [id]="'label0'"
+>
+</kb-label>
+</span>
+    </div>
+
+    <div class="col-sm-4">
+        <span><kb-combo-box
+    [id]="'combobox0'"
+    [config]="$config.components.combobox0"
+    
+    [data]="$dataServicesData['ViewDataSource1'] | async"
+    
+    [(model)]="$dataModels.ViewDataSource1Model"
+
+    
+    (modelChange)="($event)"
+    
+    
+    (selectionChange)="($event)"
+    
+    
+    (filterChange)="($event)"
+    
+    >
+</kb-combo-box>
+</span>
+    </div>
+
+    <div class="col-sm-2 myLabels">
+        <span><kb-label
+    [config]="$config.components.label1"
+    [id]="'label1'"
+>
+</kb-label>
+</span>
+    </div>
+
+    <div class="col-sm-4">
+        <span><kb-text-box
+    [config]="$config.components.textbox0"
+    [id]="'textbox0'"
+    
+    [(model)]="$dataModels.ViewDataSource1Model.currentTemp"
+
+>
+</kb-text-box>
+</span>
+    </div>
+</div>
+<div class="row ">
+
+    <div class="col-sm-6">
+    </div>
+
+    <div class="col-sm-6">
+    </div>
+</div>

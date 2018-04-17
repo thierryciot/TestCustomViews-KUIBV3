@@ -1,0 +1,67 @@
+<!--
+Auto-generated
+Do not edit!!!
+-->
+
+<div class="row ">
+
+    <div class="col-sm-12">
+        <span><kb-custom-html [id]="'customhtml0'">
+<div style="border: 1px solid black; padding: 1rem;">
+    The combobox on the left shows the list of devices from REST service (By ID) and the custom component on the right shows 
+    the selected fields in the model (for example current temperature and humidity)
+</div>
+</kb-custom-html></span>
+    </div>
+</div>
+<div class="row myRow">
+
+    <div class="col-sm-2">
+        <span><kb-label
+    [config]="$config.components.label0"
+    [id]="'label0'"
+>
+</kb-label>
+</span>
+    </div>
+
+    <div class="col-sm-4">
+        <span><kb-combo-box
+    [id]="'combobox0'"
+    [config]="$config.components.combobox0"
+    
+    [data]="$dataServicesData['ViewDataSource1'] | async"
+    
+    [(model)]="$dataModels.ViewDataSource1Model"
+
+    
+    (modelChange)="($event)"
+    
+    
+    (selectionChange)="($event)"
+    
+    
+    (filterChange)="($event)"
+    
+    >
+</kb-combo-box>
+</span>
+    </div>
+
+    <div class="col-sm-6">
+        <span><div>
+    {{$config.components.customdevicemetricscomp0.metric}}:&nbsp;{{$dataModels.ViewDataSource1Model.currentTemp}}<br/>
+</div></span>
+    </div>
+
+    <div class="col-sm-12">
+        <span><kb-expander
+    [config]="$config.components.expander0"
+    [id]="'expander0'">
+    
+            <div class="row ">
+                </div>
+    
+</kb-expander></span>
+    </div>
+</div>

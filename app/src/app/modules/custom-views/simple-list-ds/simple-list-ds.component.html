@@ -1,0 +1,70 @@
+<!--
+Auto-generated
+Do not edit!!!
+-->
+
+<h2>{{title}}</h2>
+
+<div style="margin-bottom: 1.5rem;">
+
+
+    <span>
+            Field: label: id name: id
+        </span>&nbsp;
+
+    <span>
+            Field: label: currentTemp name: currentTemp
+        </span>&nbsp;
+
+    <span>
+            Field: label: Set Temperature name: setTemp
+        </span>&nbsp;
+
+    <span>
+            Field: label: Humidity name: hum
+        </span>&nbsp;
+
+    <span>
+            Field: label: CO2 Level name: co2
+        </span>&nbsp;
+
+    <span>
+            Field: label: VOC name: voc
+        </span>&nbsp;
+
+
+    <br/>
+    <br/> Simple list from REST service call
+    <ul style="margin: 1rem;">
+        <li *ngFor="let item of myRestList">
+            <!--<span *ngFor="field of myRestFields">-->
+            <!--{{field}}: {{item[field]}}-->
+            <!--</span>&nbsp;-->
+
+            <span>
+                    id: {{item['id']}}
+                </span>&nbsp;
+
+            <span>
+                    currentTemp: {{item['currentTemp']}}
+                </span>&nbsp;
+
+            <span>
+                    Set Temperature: {{item['setTemp']}}
+                </span>&nbsp;
+
+            <span>
+                    Humidity: {{item['hum']}}
+                </span>&nbsp;
+
+            <span>
+                    CO2 Level: {{item['co2']}}
+                </span>&nbsp;
+
+            <span>
+                    VOC: {{item['voc']}}
+                </span>&nbsp;
+
+        </li>
+    </ul>
+</div>

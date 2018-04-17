@@ -1,0 +1,52 @@
+<!--
+Auto-generated
+Do not edit!!!
+-->
+<div class="kb-login">
+    <div class="row">
+        <kb-top-section></kb-top-section>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-3">
+            <div class="login-header">
+                <img src="assets/images/logo_default_login.png">
+                <h2 [innerHTML]="$config.title"></h2>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <kb-middle-section></kb-middle-section>
+    </div>
+    <div class="row justify-content-center" ngShow="$dataProviders">
+        <div class="col-3">
+            <p class="provider-name">
+                <i class="fa fa-lightbulb-o"></i> Authenticate for <strong>{{$dataProviders}}</strong>
+            </p>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-3">
+            <form class="k-form" [formGroup]="$loginForm" novalidate>
+                <label class="k-form-field">
+                    <span>User Name</span>
+                    <input class="k-textbox" formControlName="userName"/>
+                </label>
+                <label class="k-form-field">
+                    <span>Password</span>
+                    <input class="k-textbox" formControlName="password" type="password"/>
+                </label>
+                <div style="text-align: right!important;">
+                    <button type="button" class="k-button k-primary" (click)="login()">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row justify-content-center" ngShow="$loginError">
+        <div class="col-3">
+            {{$loginError}}
+        </div>
+    </div>
+    <div class="row">
+        <kb-bottom-section></kb-bottom-section>
+    </div>
+</div>
